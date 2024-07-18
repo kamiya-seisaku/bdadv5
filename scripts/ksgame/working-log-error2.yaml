@@ -1,0 +1,194 @@
+[2024/07/17: added () to  gen]
+[2024/07/17: to see the logs, fsw.socketio.run argument: 'debug': True]
+  found that "500" error has been caused by: NameError: name 'ImageGrab' is not defined
+  in flask_server.py added from PIL import ImageGrab
+[2024/07/17 12:16: screen share worked!!]
+[2024/07/17 13:20:working on: another error after PC restart:]
+  when launching dont forget to turn socketio run debug to false (fsw.socketio.run argument: 'debug': False), since this will cause error in "signal"
+[2024/07/17 14:30:screen sharing and web key control working yay!]
+  
+
+[log 2024/07/17 13:20]------------------------------------------------
+Read prefs: "C:\Users\kazuo\AppData\Roaming\Blender Foundation\Blender\4.1\config\userpref.blend"
+Read blend: "c:\codes\bdadv4\game.blend"
+showTxt: txt=register
+showTxt: previous_txt=
+register
+ * Serving Flask app 'flask_server'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6999
+ * Running on http://10.0.0.25:6999
+Press CTRL+C to quit
+Exception in thread Thread-1 (run):
+Traceback (most recent call last):
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\flask_socketio\__init__.py", line 650, in run
+    app.run(host=host, port=port, threaded=True,
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\flask\app.py", line 615, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\serving.py", line 1099, in run_simple
+    run_with_reloader(
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\_reloader.py", line 439, in run_with_reloader
+    signal.signal(signal.SIGTERM, lambda *args: sys.exit(0))  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\signal.py", line 56, in signal
+    handler = _signal.signal(_enum_to_int(signalnum), _enum_to_int(handler))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: signal only works in main thread of the main interpreter
+showTxt: txt=unregister
+showTxt: previous_txt=
+unregister
+Traceback (most recent call last):
+  File "c:\codes\bdadv4\game.blend\__main__.py", line 74, in modal
+    self.cancel(context)
+  File "c:\codes\bdadv4\game.blend\__main__.py", line 157, in cancel
+    unregister()
+  File "c:\codes\bdadv4\game.blend\__main__.py", line 174, in unregister
+    fsw.socketio.stop()
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\flask_socketio\__init__.py", line 726, in stop
+    func = flask.request.environ.get('werkzeug.server.shutdown')
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 311, in __get__
+    obj = instance._get_current_object()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+Error: Python: Traceback (most recent call last):
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 311, in __get__
+    obj = instance._get_current_object()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+
+GPUTexture: Blender Texture Not Loaded!
+GPUTexture: Blender Texture Not Loaded!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[log]------------------------------------------------
+Read prefs: "C:\Users\kazuo\AppData\Roaming\Blender Foundation\Blender\4.1\config\userpref.blend"
+Read blend: "c:\codes\bdadv4\game.blend"
+showTxt: txt=register
+showTxt: previous_txt=
+register
+ * Serving Flask app 'flask_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6999
+ * Running on http://192.168.3.6:6999
+Press CTRL+C to quit
+127.0.0.1 - - [17/Jul/2024 10:36:22] "GET / HTTP/1.1" 304 -
+in gen
+127.0.0.1 - - [17/Jul/2024 10:36:22] "GET /feed HTTP/1.1" 500 -
+Error on request:
+Traceback (most recent call last):
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    for data in application_iter:
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\wsgi.py", line 256, in __next__
+    return self._next()
+           ^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\wrappers\response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "c:\codes\bdadv4\scripts\ksgame\flask_server.py", line 101, in gen
+    ImageGrab.grab().save(img_buffer, 'JPEG', quality=50)
+NameError: name 'ImageGrab' is not defined
+127.0.0.1 - - [17/Jul/2024 10:36:22] "GET /socket.io/?EIO=4&transport=polling&t=P2-LLal HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jul/2024 10:36:23] "POST /socket.io/?EIO=4&transport=polling&t=P2-LLdE&sid=KYOE2wZyAIA_kSxRAAAA HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jul/2024 10:36:23] "GET /socket.io/?EIO=4&transport=polling&t=P2-LLdH&sid=KYOE2wZyAIA_kSxRAAAA HTTP/1.1" 200 -
+showTxt: txt=unregister
+showTxt: previous_txt=
+unregister
+Traceback (most recent call last):
+  File "c:\codes\bdadv4\game.blend\__main__.py", line 74, in modal
+    self.cancel(context)
+  File "c:\codes\bdadv4\game.blend\__main__.py", line 157, in cancel
+    unregister()
+  File "c:\codes\bdadv4\game.blend\__main__.py", line 174, in unregister
+    fsw.socketio.stop()
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\flask_socketio\__init__.py", line 726, in stop
+    func = flask.request.environ.get('werkzeug.server.shutdown')
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 311, in __get__
+    obj = instance._get_current_object()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+Error: Python: Traceback (most recent call last):
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 311, in __get__
+    obj = instance._get_current_object()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+
+GPUTexture: Blender Texture Not Loaded!
+GPUTexture: Blender Texture Not Loaded!
+127.0.0.1 - - [17/Jul/2024 10:37:07] "GET /socket.io/?EIO=4&transport=websocket&sid=KYOE2wZyAIA_kSxRAAAA HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jul/2024 10:37:07] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jul/2024 10:37:07] "GET /socket.io/?EIO=4&transport=polling&t=P2-LWPz HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jul/2024 10:37:07] "POST /socket.io/?EIO=4&transport=polling&t=P2-LWTc&sid=ME3if2bRMIGX6qlfAAAC HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jul/2024 10:37:07] "GET /socket.io/?EIO=4&transport=polling&t=P2-LWTd&sid=ME3if2bRMIGX6qlfAAAC HTTP/1.1" 200 -
+in gen
+127.0.0.1 - - [17/Jul/2024 10:37:07] "GET /feed HTTP/1.1" 500 -
+Error on request:
+Traceback (most recent call last):
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    for data in application_iter:
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\wsgi.py", line 256, in __next__
+    return self._next()
+           ^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\wrappers\response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "c:\codes\bdadv4\scripts\ksgame\flask_server.py", line 101, in gen
+    ImageGrab.grab().save(img_buffer, 'JPEG', quality=50)
+NameError: name 'ImageGrab' is not defined
+127.0.0.1 - - [17/Jul/2024 10:37:08] "GET /socket.io/?EIO=4&transport=polling&t=P2-LWYR&sid=ME3if2bRMIGX6qlfAAAC HTTP/1.1" 200 -
+in handle_message1
+in handle_message1
+in handle_message1
+in handle_message1
+in handle_message1
+in handle_message1

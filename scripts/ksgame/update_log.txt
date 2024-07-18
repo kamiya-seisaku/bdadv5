@@ -1,0 +1,24 @@
+# Done:
+# [5/9] 
+# *lets fix score and release as beta
+#   12:00 init_bricks was called statically from blender text editor not from this file.
+#   15:50 scoreing not increasing, test visinity threshold 2 (was.7)
+# [5/8] 15:50 brics wasnt visiby relocated in create_path_bricks, 
+#   needed bpy.context.view_layer.objects.active to make location into blender data object
+#   now bricks are in good position except y should be negative
+
+#   -15:30 coding PathUtil to form a path in front of the character to follow
+        # todo: needs to run brick creation as the game starts (which is more of spawn), not when this code initiates
+        # todo: needs to clear brickes when esc otherwise brics object 
+# [5/7]
+#   -15:00 clean the code
+#     -removed KeybindingUtil for now, its not working. 
+#     -removed nla editing codes its not in use for now.
+#   -14:30 Bike shifted realtime with A and D keys! yay. Parented the bike to bike-mover empty and moved bike-mover on event A and D.
+#   -14:00 key assign, w and d fine. ui text updated in realtime. yay. 
+#   -13:00 need key assign.  w first, then d first.  
+#     -manually remove assign.
+#     -assign keymap.
+# [5/6]
+#   -17:00 PlayAndBlendActionsOperator removed entirely and function ok.
+#   -15:33 animation playing going allright but not reacting to keyboard, got to move PlayAndBlendActionsOperator to ModalTimerOperator

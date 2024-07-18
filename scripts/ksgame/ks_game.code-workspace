@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "simpleAddonTemplate",
+			"path": "simpleAddonTemplate"
+		}
+	],
+	"settings": {}
+}

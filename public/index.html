@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Uncertain Days</title>
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>  
+    <script>
+        const socket = io();  // Connect to Socket.IO server
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'a' || event.key === 'd') {
+                socket.emit('message', 'keydown:' + event.key);  // Emit a Socket.IO event
+                console.log('keydown:' + event.key);
+            };
+        });
+        // document.addEventListener('keyup', (event) => {
+        //     socket.emit('message', 'keyup');  // Emit a Socket.IO event
+        //     console.log('keyup');
+        // });
+
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+    </script>
+</head>
+<body>
+    <h1>Hit A/D key</h1>
+    <div id="content">
+        <img src="/feed" id="feed" height="100%" width="100%" alt="Loading video feed...">
+    </div>
+    <div class="board"></div>
+</body>
+</html>

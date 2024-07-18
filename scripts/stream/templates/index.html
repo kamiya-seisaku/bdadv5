@@ -1,0 +1,13 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>
+<img id="screen" />
+
+<script>
+const socket = io();
+const screenImg = document.getElementById('screen');
+
+socket.on('screen_data', function(data) {
+    const img = new Image();
+    img.src = 'data:image/jpeg;base64,' + btoa(String.fromCharCode.apply(null, new Uint8Array(data)));
+    img.onload = () => screenImg.src = img.src;
+});
+</script>
