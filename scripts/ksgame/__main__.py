@@ -33,9 +33,12 @@ def showTxt(txt):
     global previous_txt
     global previous_frame
     text_obj_system = bpy.data.objects.get('ui.Text.system')
+    text_obj_fn = bpy.data.objects.get('ui.Text.FN')
     text_obj_system.data.body = str(txt)    
     
-    if bpy.data.scenes[0].frame_current - previous_frame >= 1:
+    current_frame = bpy.data.scenes[0].frame_current
+    if current_frame - previous_frame >= 1:
+        text_obj_fn.data.body = str(current_frame)
         print(f"showTxt: txt={txt}")
         print(f"showTxt: previous_txt={previous_txt}")
         print(str(txt))
@@ -61,7 +64,7 @@ def key_sm(input_key): #key handling state machine
             return ""
         else:
             previous_input_key = input_key
-            showTxt(f"in key_sm, returning {input_key} (new non-blank key input)")
+            showTxt(f"in key_sm, rurning {input_key} (new non-blank key input)")
             return input_key
 
 ## modaltimer #############################################################
@@ -91,16 +94,16 @@ class ModalTimerOperator(bpy.types.Operator):
             return {'PASS_THROUGH'}
 
         if event.type in {'A', 'D'}:
+            showTxt(f'2 in ModalTimerOperator/modal/event.type: event.type = {event.type}')
             sf.key_source_g = "blender event"
             sf.key_input_g = event.type
-            self.key_handling(context, event, sf.key_input_g)
+            self.key_handling(context, event, event.type)
             return {'PASS_THROUGH'}
 
         # screen share
-        if previous_current_frame != current_frame:
+        if self.previous_current_frame != current_frame:
             previous_current_frame = current_frame
             showTxt(f"current_frame={current_frame}")
-
         return {'PASS_THROUGH'}
 
     def key_handling(self, context, event, key_input):
@@ -119,11 +122,11 @@ class ModalTimerOperator(bpy.types.Operator):
         else:
             # bike_mover["is_moving"] = True
             text_obj_toggle.data.body = str(f"bike_mover is moving")
-            et = event.type
-            frame_number = bpy.context.scene.frame_current
-            # to show the score in the 3D view, the body of the ui text object
-            # is set according to the same object's custom property "score"
-            text_obj_fn.data.body = str(f"FN:{frame_number}")
+#            et = event.type
+#            frame_number = bpy.context.scene.frame_current
+#            # to show the score in the 3D view, the body of the ui text object
+#            # is set according to the same object's custom property "score"
+#            text_obj_fn.data.body = str(f"FN:{frame_number}")
             # key event handling
             showTxt(key_input)
             if key_input == 'A':
@@ -140,7 +143,7 @@ class ModalTimerOperator(bpy.types.Operator):
     def execute(self, context):
         global fsw
         frame = fsw.video_camera.get_frame()
-        self.fsw.socketio.emit('screen_data', frame, namespace='/screen')
+        fsw.socketio.emit('screen_data', frame, namespace='/screen')
 
         global previous_txt
         global previous_frame
