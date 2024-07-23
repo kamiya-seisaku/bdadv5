@@ -69,6 +69,7 @@ class ModalTimerOperator(bpy.types.Operator):
     bl_idname = "wm.modal_timer_operator"
     bl_label = "ks game"
     global fsw #flask server wrapper class
+    previous_current_frame = 0
 
     def __init__(self):
         pass
@@ -94,6 +95,11 @@ class ModalTimerOperator(bpy.types.Operator):
             sf.key_input_g = event.type
             self.key_handling(context, event, sf.key_input_g)
             return {'PASS_THROUGH'}
+
+        # screen share
+        if previous_current_frame != current_frame:
+            previous_current_frame = current_frame
+            showTxt(f"current_frame={current_frame}")
 
         return {'PASS_THROUGH'}
 

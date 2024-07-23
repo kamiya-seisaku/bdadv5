@@ -30,26 +30,29 @@
             background-image: url("/bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
-            display: flex; /* Enable flexbox for centering */
-            align-items: center;  /* Vertically center content */
-            justify-content: center; /* Horizontally center content */
-            height: 100vh; /* Ensure body covers the full viewport height */
+            height: 100vh;
             margin: 0;
+            position: relative; /* Key for overlay positioning */
         }
 
         h1 {
             font-family: 'Monoton', cursive; /* Choose a fancy font */
-            font-size: 2em; /* Smaller text size */
+            font-size: 1em; /* Smaller text size */
             color: #fff; /* White text for visibility on dark backgrounds */
-            text-shadow: 
-                0 0 10px #fff, /* White glow */
-                0 0 20px #fff, /* Larger white glow */
-                0 0 30px #ff4da6, /* Pinkish glow */
-                0 0 40px #ff4da6, /* Larger pinkish glow */
-                0 0 50px #ff4da6, /* Largest pinkish glow */
-                0 0 60px #ff4da6, /* Largest pinkish glow */
-                0 0 70px #ff4da6; /* Largest pinkish glow */
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff4da6, 
+                         0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6,
+                         0 0 70px #ff4da6;
             animation: glowAndTwinkle 2s linear infinite; /* Apply animation */
+            position: absolute; /* Position h1 as an overlay */
+            top: 5%;
+            left: 15%;
+            transform: translate(-50%, -50%); /* Center the overlay */
+            z-index: 10; /* Ensure the overlay is on top */
+        }
+
+        #content {
+            position: relative; /* Ensure content is below the overlay */
+            z-index: 5;        /* but above the background */
         }
 
         @keyframes glowAndTwinkle {
