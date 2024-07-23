@@ -25,6 +25,39 @@
             console.log('Disconnected from server');
         });
     </script>
+    <style>
+        body {
+            background-image: url("/bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex; /* Enable flexbox for centering */
+            align-items: center;  /* Vertically center content */
+            justify-content: center; /* Horizontally center content */
+            height: 100vh; /* Ensure body covers the full viewport height */
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'Monoton', cursive; /* Choose a fancy font */
+            font-size: 2em; /* Smaller text size */
+            color: #fff; /* White text for visibility on dark backgrounds */
+            text-shadow: 
+                0 0 10px #fff, /* White glow */
+                0 0 20px #fff, /* Larger white glow */
+                0 0 30px #ff4da6, /* Pinkish glow */
+                0 0 40px #ff4da6, /* Larger pinkish glow */
+                0 0 50px #ff4da6, /* Largest pinkish glow */
+                0 0 60px #ff4da6, /* Largest pinkish glow */
+                0 0 70px #ff4da6; /* Largest pinkish glow */
+            animation: glowAndTwinkle 2s linear infinite; /* Apply animation */
+        }
+
+        @keyframes glowAndTwinkle {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
     <h1>Hit A/D key</h1>

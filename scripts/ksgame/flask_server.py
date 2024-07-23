@@ -3,12 +3,12 @@ from flask_socketio import SocketIO, emit
 import shared_stuff as sf
 import mss
 from io import BytesIO
-from PIL import Image
+# from PIL import Image
 from PIL import ImageGrab
-import os
-import sys
-import ifaddr
-import re
+# import os
+# import sys
+# import ifaddr
+# import re
 from screen_share import ScreenShareCamera
 
 ## flask #####################################################################
@@ -17,7 +17,6 @@ class flask_server_wrapper:
   
     app = Flask(__name__)
     socketio = SocketIO(app)
-    testvar = 0
     monitor = {"top": 100, "left": 100, "width": 800, "height": 800}  # Define capture area
     
     def __init__(self):
@@ -28,32 +27,18 @@ class flask_server_wrapper:
         height = self.monitor["height"]
 
         # Initialize the camera with positional arguments
+        print(f"ScreenShareCamera: top={top}, left={left}, width={width}, height={height}")
         self.video_camera = ScreenShareCamera(top, left, width, height)
 
-        # # from python-screen-projector
-        # def get_v4(ip, adapter):
-        #     if re.match(r"^((25[0-5]|(2[0-4]|1[0-9]|[1-9]|)[0-9])(\.(?!$)|$)){4}$", ip):
-        #         print(f'• Sharing screen on ip => http://{ip}:6999 \tof "{adapter}"')
-
-
-        # cli = sys.modules['flask.cli']
-        # cli.show_server_banner = lambda *x: None
-        # cli = lambda *x: None
-        # log = logging.getLogger('werkzeug')
-        # log.setLevel(logging.ERROR)
-
-        # APP_TITLE = """
-
-
-    # todo: to be deleted
     def capture_and_stream(self):
-        while True:
-            frame = self.video_camera.get_frame()
-            if frame is not None:
-                self.socketio.emit('screen_data', frame, namespace='/screen')
-            else:
-                # If there's an issue capturing the frame, wait a short time and retry
-                time.sleep(0.1) 
+        pass
+        # while True:
+        #     frame = self.video_camera.get_frame()
+        #     if frame is not None:
+        #         self.socketio.emit('screen_data', frame, namespace='/screen')
+        #     else:
+        #         # If there's an issue capturing the frame, wait a short time and retry
+        #         time.sleep(0.1) 
 
     @socketio.on('connect', namespace='/screen')
     def handle_connect():
@@ -92,6 +77,10 @@ class flask_server_wrapper:
     @app.route('/')
     def index():
         return send_file('..\\..\\public\\index.html')
+
+    @app.route('/bg.jpg')
+    def background():
+        return send_file('..\\..\\assets\\milky_way-galaxy_ZBYYSDXC8O.jpg')
 
     @app.route('/feed')
     def video_feed():

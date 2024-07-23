@@ -1,9 +1,17 @@
+# [issues]
+# -web key not working UNTIL a key is pressed in blender
+# -blender key only works once
+
+# [Todo]
+# linode.com
+
+###############################################################################
 # This code is written for a Blender indie game project "Uncirtain Days"
 # This code is published with the MIT license, as is, no support obligation.
 # Kamiya Seisaku, Kamiya Kei, 2024
 import bpy
 import os
-import glob
+# import glob
 #from flask_socketio import SocketIO, emit
 #import threading
 import os
@@ -124,6 +132,10 @@ class ModalTimerOperator(bpy.types.Operator):
         return
 
     def execute(self, context):
+        global fsw
+        frame = fsw.video_camera.get_frame()
+        self.fsw.socketio.emit('screen_data', frame, namespace='/screen')
+
         global previous_txt
         global previous_frame
         previous_txt = ""
