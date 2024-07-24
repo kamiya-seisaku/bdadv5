@@ -3,7 +3,7 @@
 # -blender key only works once
 
 # [Todo]
-# linode.com
+# screen share in modal not in separate thread 
 
 ###############################################################################
 # This code is written for a Blender indie game project "Uncirtain Days"
@@ -101,9 +101,11 @@ class ModalTimerOperator(bpy.types.Operator):
             return {'PASS_THROUGH'}
 
         # screen share
+        # todo
         if self.previous_current_frame != current_frame:
             previous_current_frame = current_frame
             showTxt(f"current_frame={current_frame}")
+            
         return {'PASS_THROUGH'}
 
     def key_handling(self, context, event, key_input):
@@ -224,7 +226,7 @@ def register():
     bpy.utils.register_class(ModalTimerOperator)
     bpy.types.VIEW3D_MT_view.append(menu_func)
 
-# Todo: comment out [debug codes]
+# [debug codes]
 #register()
 #bpy.ops.wm.modal_timer_operator()
 #init_bricks()

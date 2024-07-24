@@ -30,21 +30,21 @@ class flask_server_wrapper:
         print(f"ScreenShareCamera: top={top}, left={left}, width={width}, height={height}")
         self.video_camera = ScreenShareCamera(top, left, width, height)
 
-    def capture_and_stream(self):
-        pass
-        # while True:
-        #     frame = self.video_camera.get_frame()
-        #     if frame is not None:
-        #         self.socketio.emit('screen_data', frame, namespace='/screen')
-        #     else:
-        #         # If there's an issue capturing the frame, wait a short time and retry
-        #         time.sleep(0.1) 
+    # def capture_and_stream(self):
+    #     pass
+    #     # while True:
+    #     #     frame = self.video_camera.get_frame()
+    #     #     if frame is not None:
+    #     #         self.socketio.emit('screen_data', frame, namespace='/screen')
+    #     #     else:
+    #     #         # If there's an issue capturing the frame, wait a short time and retry
+    #     #         time.sleep(0.1) 
 
     @socketio.on('connect', namespace='/screen')
     def handle_connect():
         # showTxt('Client connected')
         # todo: to be deleted
-        self.socketio.start_background_task(self.capture_and_stream)
+        # self.socketio.start_background_task(self.capture_and_stream)
 
     @socketio.on('disconnect')
     def handle_disconnect():
