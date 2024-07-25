@@ -1,55 +1,25 @@
 from flask import Flask, send_file, Response, render_template
 from flask_socketio import SocketIO, emit
 import shared_stuff as sf
-import mss
+# import mss
 from io import BytesIO
-# from PIL import Image
 from PIL import ImageGrab
-# import os
-# import sys
-# import ifaddr
-# import re
-from screen_share import ScreenShareCamera
+# from screen_share import ScreenShareCamera
 
 ## flask #####################################################################
 class flask_server_wrapper:
-    # showTxt("flask_server_wrapper")
-  
     app = Flask(__name__)
     socketio = SocketIO(app)
     monitor = {"top": 100, "left": 100, "width": 800, "height": 800}  # Define capture area
     
     def __init__(self):
-        # Extract values as individual variables
         top = self.monitor["top"]
         left = self.monitor["left"]
         width = self.monitor["width"]
         height = self.monitor["height"]
 
-        # Initialize the camera with positional arguments
         print(f"ScreenShareCamera: top={top}, left={left}, width={width}, height={height}")
         self.video_camera = ScreenShareCamera(top, left, width, height)
-
-    # def capture_and_stream(self):
-    #     pass
-    #     # while True:
-    #     #     frame = self.video_camera.get_frame()
-    #     #     if frame is not None:
-    #     #         self.socketio.emit('screen_data', frame, namespace='/screen')
-    #     #     else:
-    #     #         # If there's an issue capturing the frame, wait a short time and retry
-    #     #         time.sleep(0.1) 
-
-    @socketio.on('connect', namespace='/screen')
-    def handle_connect():
-        # showTxt('Client connected')
-        # todo: to be deleted
-        # self.socketio.start_background_task(self.capture_and_stream)
-
-    @socketio.on('disconnect')
-    def handle_disconnect():
-        pass
-        # showTxt('Client disconnected')
 
     @socketio.on('message')
     def handle_message(message):

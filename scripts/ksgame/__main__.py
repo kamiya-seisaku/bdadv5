@@ -3,7 +3,8 @@
 # -blender key only works once
 
 # [Todo]
-# screen share in modal not in separate thread 
+# screen share size control
+    # ditch screen_share.py
 
 ###############################################################################
 # This code is written for a Blender indie game project "Uncirtain Days"
@@ -11,9 +12,8 @@
 # Kamiya Seisaku, Kamiya Kei, 2024
 import bpy
 import os
-# import glob
-#from flask_socketio import SocketIO, emit
-#import threading
+from PIL import ImageGrab
+import io
 import os
 import sys
 import threading
@@ -23,7 +23,7 @@ sys.path.append(libdir)
 
 from flask_server import flask_server_wrapper
 import shared_stuff as sf
-from screen_share import ScreenShareCamera
+# from screen_share import ScreenShareCamera
 
 ## Utilities ##################################################################
 previous_txt = ""
@@ -51,20 +51,20 @@ def showTxt(txt):
 #   input_key, only if it is a non-repeated key input
 previous_input_key = ""
 def key_sm(input_key): #key handling state machine
-    showTxt(f"in key_sm, input_key={input_key}")
+    # showTxt(f"in key_sm, input_key={input_key}")
     global previous_input_key
     if input_key == "":
         previous_input_key = ""
-        showTxt("in key_sm, returning blank (previous was blank)")
+        # showTxt("in key_sm, returning blank (previous was blank)")
         return ""
     else:
         if previous_input_key == input_key:
             previous_input_key = ""
-            showTxt("in key_sm, returning blank (repeated key input)")
+            # showTxt("in key_sm, returning blank (repeated key input)")
             return ""
         else:
             previous_input_key = input_key
-            showTxt(f"in key_sm, rurning {input_key} (new non-blank key input)")
+            # showTxt(f"in key_sm, rurning {input_key} (new non-blank key input)")
             return input_key
 
 ## modaltimer #############################################################
@@ -73,6 +73,7 @@ class ModalTimerOperator(bpy.types.Operator):
     bl_label = "ks game"
     global fsw #flask server wrapper class
     previous_current_frame = 0
+    capture_size = {'x,': 500, 'y': 500, 'width': 800, 'height': 600}
 
     def __init__(self):
         pass
@@ -86,15 +87,11 @@ class ModalTimerOperator(bpy.types.Operator):
             self.cancel(context)
             return {'CANCELLED'}
 
-#        showTxt(f'1 in ModalTimerOperator/modal/if sf.key_input_g in A, D: sf.key_input_g = {sf.key_input_g}')
-
         if sf.key_input_g in {'A', 'D'}:
-#            showTxt(f'2 in ModalTimerOperator/modal/if sf.key_input_g in A, D: sf.key_input_g = {sf.key_input_g}')
             self.key_handling(context, event, sf.key_input_g)
             return {'PASS_THROUGH'}
 
         if event.type in {'A', 'D'}:
-            showTxt(f'2 in ModalTimerOperator/modal/event.type: event.type = {event.type}')
             sf.key_source_g = "blender event"
             sf.key_input_g = event.type
             self.key_handling(context, event, event.type)
@@ -104,33 +101,23 @@ class ModalTimerOperator(bpy.types.Operator):
         # todo
         if self.previous_current_frame != current_frame:
             previous_current_frame = current_frame
-            showTxt(f"current_frame={current_frame}")
+            # showTxt(f"current_frame={current_frame}")
             
         return {'PASS_THROUGH'}
 
     def key_handling(self, context, event, key_input):
         processed_key = key_sm(key_input)
-        showTxt(f"in key_handling: processed_key={processed_key}")
+        # showTxt(f"in key_handling: processed_key={processed_key}")
         if processed_key == "":
-            showTxt(f"in key_handling: repeated key")
+            # showTxt(f"in key_handling: repeated key")
             return
-        # showTxt(f"in key_handling: key_input(arg of key_handling)= {key_input}")
         bike_mover = bpy.data.objects.get('bike-mover')
         text_obj_toggle = bpy.data.objects.get('ui.Text.toggle')
         text_obj_fn = bpy.data.objects.get('ui.Text.FN')
         if text_obj_toggle.data.body == str(f"bike_mover is moving"):
-            # bike_mover["is_moving"] = False
             text_obj_toggle.data.body = str(f"bike_mover is not moving")
         else:
-            # bike_mover["is_moving"] = True
             text_obj_toggle.data.body = str(f"bike_mover is moving")
-#            et = event.type
-#            frame_number = bpy.context.scene.frame_current
-#            # to show the score in the 3D view, the body of the ui text object
-#            # is set according to the same object's custom property "score"
-#            text_obj_fn.data.body = str(f"FN:{frame_number}")
-            # key event handling
-            showTxt(key_input)
             if key_input == 'A':
                 if bike_mover.location.x < 1:
                     bike_mover.location.x += 0.5
@@ -142,9 +129,25 @@ class ModalTimerOperator(bpy.types.Operator):
             
         return
 
+    def get_frame(self):
+        """Capture and return the frame as JPEG bytes."""
+        print("get_frame")
+        try:
+            img = ImageGrab.grab()
+            c = self.capture_size
+            x, y, width, height = c['x'], c['y'], c['width'], c['height']
+            cropped_image = img.crop((x, y, x + width, y + height))
+            buffer = io.BytesIO()
+            cropped_image.save(buffer, format="JPEG")
+            frame = buffer.getvalue()
+            return frame
+        except Exception as e:
+            print(f"Error capturing screen region: {e}")
+            return None
+
     def execute(self, context):
         global fsw
-        frame = fsw.video_camera.get_frame()
+        frame = self.get_frame()
         fsw.socketio.emit('screen_data', frame, namespace='/screen')
 
         global previous_txt
