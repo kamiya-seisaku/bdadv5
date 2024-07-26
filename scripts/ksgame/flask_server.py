@@ -13,13 +13,14 @@ class flask_server_wrapper:
     monitor = {"top": 100, "left": 100, "width": 800, "height": 800}  # Define capture area
     
     def __init__(self):
-        top = self.monitor["top"]
-        left = self.monitor["left"]
-        width = self.monitor["width"]
-        height = self.monitor["height"]
+        pass
+        # top = self.monitor["top"]
+        # left = self.monitor["left"]
+        # width = self.monitor["width"]
+        # height = self.monitor["height"]
 
-        print(f"ScreenShareCamera: top={top}, left={left}, width={width}, height={height}")
-        self.video_camera = ScreenShareCamera(top, left, width, height)
+        # print(f"ScreenShareCamera: top={top}, left={left}, width={width}, height={height}")
+        # self.video_camera = ScreenShareCamera(top, left, width, height)
 
     @socketio.on('message')
     def handle_message(message):
@@ -57,10 +58,13 @@ class flask_server_wrapper:
         def gen():
             print("in gen")
             while True:
+                # capture_size = {'x': 500, 'y': 500, 'width': 800, 'height': 600}
+                # c = capture_size
+                # x, y, width, height = c['x'], c['y'], c['width'], c['height']
+                x, y, width, height = 500, 500, 800, 600
                 img_buffer = BytesIO()
-                ImageGrab.grab().save(img_buffer, 'JPEG', quality=50)
+                ImageGrab.grab(bbox =(x, y, x + width, y + height)).save(img_buffer, 'JPEG', quality=50)
                 img_buffer.seek(0)
                 yield (b'--frame\r\n'
                     b'Content-Type: image/jpg\r\n\r\n' + img_buffer.read() + b'\r\n\r\n')
-
         return Response(gen(), mimetype='multipart/x-mixed-replace; boundary=frame')

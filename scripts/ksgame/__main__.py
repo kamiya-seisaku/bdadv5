@@ -73,13 +73,27 @@ class ModalTimerOperator(bpy.types.Operator):
     bl_label = "ks game"
     global fsw #flask server wrapper class
     previous_current_frame = 0
-    capture_size = {'x,': 500, 'y': 500, 'width': 800, 'height': 600}
 
-    def __init__(self):
-        pass
+    # def get_frame(self):
+    #     """Capture and return the frame as JPEG bytes."""
+    #     # print("get_frame")
+    #     try:
+    #         global capture_size
+    #         c = capture_size
+    #         x, y, width, height = c['x'], c['y'], c['width'], c['height']
+    #         img = ImageGrab.grab(bbox =(x, y, x + width, y + height))
+    #         # todo
+    #         buffer = io.BytesIO()
+    #         img.save(buffer, format="JPEG")
+    #         frame = buffer.getvalue()
+    #         return frame
+    #     except Exception as e:
+    #         print(f"Error capturing screen region: {e}")
+    #         return None
 
     def modal(self, context, event):
         current_frame = bpy.context.scene.frame_current
+
         if isinstance(event, bpy.types.Event) == False:
             return {'PASS_THROUGH'}
 
@@ -99,10 +113,13 @@ class ModalTimerOperator(bpy.types.Operator):
 
         # screen share
         # todo
-        if self.previous_current_frame != current_frame:
-            previous_current_frame = current_frame
-            # showTxt(f"current_frame={current_frame}")
-            
+        # global fsw
+        # if self.previous_current_frame != current_frame:
+        #     previous_current_frame = current_frame
+        #     frame = self.get_frame()
+        #     fsw.socketio.emit('screen_data', frame, namespace='/screen')
+        #     showTxt(f"modal screen share xx")
+          
         return {'PASS_THROUGH'}
 
     def key_handling(self, context, event, key_input):
@@ -129,27 +146,7 @@ class ModalTimerOperator(bpy.types.Operator):
             
         return
 
-    def get_frame(self):
-        """Capture and return the frame as JPEG bytes."""
-        print("get_frame")
-        try:
-            img = ImageGrab.grab()
-            c = self.capture_size
-            x, y, width, height = c['x'], c['y'], c['width'], c['height']
-            cropped_image = img.crop((x, y, x + width, y + height))
-            buffer = io.BytesIO()
-            cropped_image.save(buffer, format="JPEG")
-            frame = buffer.getvalue()
-            return frame
-        except Exception as e:
-            print(f"Error capturing screen region: {e}")
-            return None
-
     def execute(self, context):
-        global fsw
-        frame = self.get_frame()
-        fsw.socketio.emit('screen_data', frame, namespace='/screen')
-
         global previous_txt
         global previous_frame
         previous_txt = ""
@@ -209,10 +206,10 @@ def register():
     import screen_share
     import importlib
     importlib.reload(screen_share)
-    from screen_share import ScreenShareCamera  # re-import ScreenShareCamera
+    # from screen_share import ScreenShareCamera  # re-import ScreenShareCamera
 
     fsw = flask_server_wrapper()
-    video_camera = ScreenShareCamera(0, 0, 800, 600)  # Adjust dimensions as needed
+    # video_camera = ScreenShareCamera(0, 0, 800, 600)  # Adjust dimensions as needed
 
     # Start the web server in a separate thread
     threading.Thread(
