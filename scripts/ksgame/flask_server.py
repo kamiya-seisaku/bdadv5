@@ -61,7 +61,8 @@ class flask_server_wrapper:
                 # capture_size = {'x': 500, 'y': 500, 'width': 800, 'height': 600}
                 # c = capture_size
                 # x, y, width, height = c['x'], c['y'], c['width'], c['height']
-                x, y, width, height = 2, 285, 900, 500
+                x, y, width, height = 0, 75, 500, 400
+                # x, y, width, height = 2, 285, 900, 500
                 img_buffer = BytesIO()
                 ImageGrab.grab(bbox =(x, y, x + width, y + height)).save(img_buffer, 'JPEG', quality=50)
                 img_buffer.seek(0)

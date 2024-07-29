@@ -32,7 +32,10 @@
             background-repeat: no-repeat;
             height: 100vh;
             margin: 0;
-            position: relative; /* Key for overlay positioning */
+            /* position: relative; Key for overlay positioning */
+            display: flex; /* Use flexbox for centering */
+            align-items: center; /* Vertically center */
+            justify-content: center; /* Horizontally center */
         }
 
         h1 {
@@ -51,6 +54,8 @@
         }
 
         #content {
+            width: 50%;  /* Make content half the screen width */
+            max-height: 50%; /* Optional: Limit height to half the screen */
             position: relative; /* Ensure content is below the overlay */
             z-index: 5;        /* but above the background */
         }
