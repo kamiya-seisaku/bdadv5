@@ -51,7 +51,7 @@ def showTxt(txt):
 #   input_key, only if it is a non-repeated key input
 previous_input_key = ""
 def key_sm(input_key): #key handling state machine
-    # showTxt(f"in key_sm, input_key={input_key}")
+    showTxt(f"in key_sm, input_key={input_key}")
     global previous_input_key
     if input_key == "":
         previous_input_key = ""
@@ -219,7 +219,7 @@ def register():
         args=(fsw.app, '0.0.0.0', 6999),
         kwargs={
             'allow_unsafe_werkzeug': True,
-            'debug': False,
+            'debug': True,
         }  # For development purposes
     ).start()
     # fsw.socketio.run(fsw.app, host='0.0.0.0', port=6999, debug=False)

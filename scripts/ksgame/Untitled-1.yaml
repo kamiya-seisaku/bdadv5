@@ -1,0 +1,1053 @@
+Read prefs: "C:\Users\kazuo\AppData\Roaming\Blender Foundation\Blender\4.1\config\userpref.blend"
+Read blend: "c:\codes\bdadv5\game.blend"
+showTxt: txt=register
+showTxt: previous_txt=
+register
+ * Serving Flask app 'flask_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6999
+ * Running on http://192.168.3.6:6999
+Press CTRL+C to quit
+GPUTexture: Blender Texture Not Loaded!
+GPUTexture: Blender Texture Not Loaded!
+127.0.0.1 - - [30/Jul/2024 10:42:06] "GET / HTTP/1.1" 304 -
+in gen
+127.0.0.1 - - [30/Jul/2024 10:42:06] "GET /socket.io/?EIO=4&transport=polling&t=P41JKEi HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jul/2024 10:42:06] "GET /feed HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jul/2024 10:42:06] "POST /socket.io/?EIO=4&transport=polling&t=P41JKFF&sid=z_KCQgEZB2VcOA4CAAAA HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jul/2024 10:42:06] "GET /socket.io/?EIO=4&transport=polling&t=P41JKFJ&sid=z_KCQgEZB2VcOA4CAAAA HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jul/2024 10:42:07] "GET /bg.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [30/Jul/2024 10:42:07] "GET /socket.io/?EIO=4&transport=polling&t=P41JKMH&sid=z_KCQgEZB2VcOA4CAAAA HTTP/1.1" 200 -
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = D
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=D
+showTxt: previous_txt=
+in key_handling1: processed_key=D
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = D
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message1. sf.key_input_g =
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message2
+in handle_message4
+in handle_message1. sf.key_input_g = A
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message2
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message4
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message1. sf.key_input_g =
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message2
+in handle_message1. sf.key_input_g =
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message2
+in handle_message4
+in handle_message1. sf.key_input_g =
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message2
+in handle_message4
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message2
+in handle_message4
+showTxt: txt=in key_handling1: processed_key=A
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: previous_txt=
+in handle_message1. sf.key_input_g = A
+in key_handling1: processed_key=A
+in handle_message2
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g =
+in handle_message2
+showTxt: txt=in key_handling1: processed_key=
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message1. sf.key_input_g = A
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: previous_txt=
+in handle_message1. sf.key_input_g =
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in key_handling1: processed_key=
+in handle_message4
+in handle_message2
+in handle_message4
+in handle_message4
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message1. sf.key_input_g =
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message2
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message2
+in handle_message1. sf.key_input_g = A
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message1. sf.key_input_g = A
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message4
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message2
+in handle_message1. sf.key_input_g =
+in handle_message2
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message4
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message2
+in handle_message4
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=in key_handling1: processed_key=A
+showTxt: previous_txt=
+in key_handling1: processed_key=A
+showTxt: txt=in key_handling1: processed_key=
+showTxt: previous_txt=
+in key_handling1: processed_key=
+showTxt: txt=unregister
+showTxt: previous_txt=
+unregister
+Traceback (most recent call last):
+  File "c:\codes\bdadv5\game.blend\__main__.py", line 101, in modal
+    self.cancel(context)
+  File "c:\codes\bdadv5\game.blend\__main__.py", line 182, in cancel
+    unregister()
+  File "c:\codes\bdadv5\game.blend\__main__.py", line 199, in unregister
+    fsw.socketio.stop()
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\flask_socketio\__init__.py", line 726, in stop
+    func = flask.request.environ.get('werkzeug.server.shutdown')
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 311, in __get__
+    obj = instance._get_current_object()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+Error: Python: Traceback (most recent call last):
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 311, in __get__
+    obj = instance._get_current_object()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+
+showTxt: txt=register
+showTxt: previous_txt=
+register
+register_class(...):
+Info: Registering operator class: 'ModalTimerOperator', bl_idname 'wm.modal_timer_operator' has been registered before, unregistering previous
+ * Serving Flask app 'flask_server'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6999
+ * Running on http://192.168.3.6:6999
+Press CTRL+C to quit
+Exception in thread Thread-88 (run):
+Traceback (most recent call last):
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\flask_socketio\__init__.py", line 650, in run
+    app.run(host=host, port=port, threaded=True,
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\flask\app.py", line 615, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\serving.py", line 1099, in run_simple
+    run_with_reloader(
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\site-packages\werkzeug\_reloader.py", line 439, in run_with_reloader
+    signal.signal(signal.SIGTERM, lambda *args: sys.exit(0))
+  File "C:\bin\blender-4.1.0-windows-x64\4.1\python\Lib\signal.py", line 56, in signal
+    handler = _signal.signal(_enum_to_int(signalnum), _enum_to_int(handler))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: signal only works in main thread of the main interpreter
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+127.0.0.1 - - [30/Jul/2024 10:48:31] "GET /socket.io/?EIO=4&transport=websocket&sid=z_KCQgEZB2VcOA4CAAAA HTTP/1.1" 200 -
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+127.0.0.1 - - [30/Jul/2024 10:48:31] "GET / HTTP/1.1" 304 -
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+127.0.0.1 - - [30/Jul/2024 10:48:31] "GET /socket.io/?EIO=4&transport=polling&t=P41KoH5 HTTP/1.1" 200 -
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+127.0.0.1 - - [30/Jul/2024 10:48:32] "POST /socket.io/?EIO=4&transport=polling&t=P41KoJW&sid=DfpuI506ifzPhlWwAAAC HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jul/2024 10:48:32] "GET /socket.io/?EIO=4&transport=polling&t=P41KoJa&sid=DfpuI506ifzPhlWwAAAC HTTP/1.1" 200 -
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+in gen
+127.0.0.1 - - [30/Jul/2024 10:48:32] "GET /bg.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [30/Jul/2024 10:48:32] "GET /socket.io/?EIO=4&transport=polling&t=P41KoMF&sid=DfpuI506ifzPhlWwAAAC HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jul/2024 10:48:32] "GET /feed HTTP/1.1" 200 -
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+in handle_message1. sf.key_input_g = D
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+showTxt: txt=in key_sm, input_key=A
+showTxt: previous_txt=
+in key_sm, input_key=A
+in handle_message1. sf.key_input_g = A
+in handle_message2
+in handle_message4
+in handle_message5: socket_key_input={socket_key_input}
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
+showTxt: txt=in key_sm, input_key=D
+showTxt: previous_txt=
+in key_sm, input_key=D
