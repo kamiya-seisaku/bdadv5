@@ -26,9 +26,9 @@ class flask_server_wrapper:
     def handle_message(message):
 #        import pdb; pdb.set_trace()
 
-        print("in handle_message1")
-        if sf.key_input_g == '':
-            return
+        print(f"in handle_message1. sf.key_input_g = {sf.key_input_g}")
+        # if sf.key_input_g == '':
+        #     return
         sf.key_source_g = "socketio"
         sf.key_input_g = ''  # Reset key input
         print("in handle_message2")
@@ -39,6 +39,7 @@ class flask_server_wrapper:
             print("in handle_message4")
         # elif message[0:7]=='keydown:':
             socket_key_input = message[8:9]
+            print("in handle_message5: socket_key_input={socket_key_input}")
             # print(f"flask_server_wrapper/in handle_message: socket_key_input={socket_key_input}")
             if socket_key_input in {'a', 'd'}:
                 sf.key_input_g = socket_key_input.upper()
@@ -61,7 +62,7 @@ class flask_server_wrapper:
                 # capture_size = {'x': 500, 'y': 500, 'width': 800, 'height': 600}
                 # c = capture_size
                 # x, y, width, height = c['x'], c['y'], c['width'], c['height']
-                x, y, width, height = 0, 75, 500, 400
+                x, y, width, height = 0, 75, 2000, 1500
                 # x, y, width, height = 2, 285, 900, 500
                 img_buffer = BytesIO()
                 ImageGrab.grab(bbox =(x, y, x + width, y + height)).save(img_buffer, 'JPEG', quality=50)

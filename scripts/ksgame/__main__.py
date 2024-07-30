@@ -124,17 +124,19 @@ class ModalTimerOperator(bpy.types.Operator):
 
     def key_handling(self, context, event, key_input):
         processed_key = key_sm(key_input)
-        # showTxt(f"in key_handling: processed_key={processed_key}")
-        if processed_key == "":
-            # showTxt(f"in key_handling: repeated key")
-            return
+        showTxt(f"in key_handling1: processed_key={processed_key}")
+        # if processed_key == "":
+        #     showTxt(f"in key_handlingO: processed_key == blank")
+        #     return
         bike_mover = bpy.data.objects.get('bike-mover')
         text_obj_toggle = bpy.data.objects.get('ui.Text.toggle')
         text_obj_fn = bpy.data.objects.get('ui.Text.FN')
+        showTxt(f"in key_handling2: processed_key={processed_key}")
         if text_obj_toggle.data.body == str(f"bike_mover is moving"):
             text_obj_toggle.data.body = str(f"bike_mover is not moving")
         else:
             text_obj_toggle.data.body = str(f"bike_mover is moving")
+            showTxt(f"in key_handling3: processed_key={processed_key}")
             if key_input == 'A':
                 if bike_mover.location.x < 1:
                     bike_mover.location.x += 0.5
